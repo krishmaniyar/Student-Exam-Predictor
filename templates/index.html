@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Student Exam Performance Indicator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
 </head>
 <body>
-    <h1>Welcome to the home page</h1>
+    <div class="container">
+        <div class="card">
+            <h1 class="title">📚 Student Exam Performance Indicator</h1>
+            <p class="subtitle">
+                Predict student exam performance based on demographics, parental education, and prior scores.
+            </p>
+            <a href="{{ url_for('predict_datapoint') }}" class="btn">Make a Prediction</a>
+        </div>
+    </div>
 </body>
 </html>
